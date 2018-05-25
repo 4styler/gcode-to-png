@@ -1,5 +1,5 @@
 # gcode-to-png
-(License: grep(GNU GENERAL PUBLIC LICENSE), ImageMagick(ImageMagick License) see Licence File)
+(License: grep(GNU GENERAL PUBLIC LICENSE))
 
 Create a png file of each Layer of a GCode (optimized for CURA and Simplify3D GCode files)
 
