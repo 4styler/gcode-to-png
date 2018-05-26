@@ -1,7 +1,8 @@
 # gcode-to-png
 (License: grep(GNU GENERAL PUBLIC LICENSE))
 
-Create a png file of each Layer of a GCode (optimized for CURA and Simplify3D GCode files)
+Create a png file of each Layer of a GCode (optimized for CURA and Simplify3D GCode files). To display it, i will take
+"spacedesk" to make my Smartphone to a second screen on the PC.
 
 (Can Anyone tell me if i can attach grep and ImageMagick directly here? Or is that a licence problem?)
 
