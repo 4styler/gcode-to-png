@@ -45,10 +45,10 @@ $var9.Bed_Size_Y = 60 #mm
   - That option will scale the hole image. Use youre Bed Size
   
 $var9.Move_X = 25 #mm
-  - That will move your object "Gcode" to another position.
+  - That will move your object "Gcode" to another position. Negative values are also possible.
   
 $var9.Move_Y = 30 #mm
-  - That will move your object "Gcode" to another position.
+  - That will move your object "Gcode" to another position. Negative values are also possible.
   
 $var9.Scale_Object = 1 #factor
   - With this option you can scale the Object to get the correct size on the Screen
