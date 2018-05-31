@@ -23,6 +23,8 @@ x32 Bit: https://www.imagemagick.org/download/binaries/ImageMagick-7.0.7-35-port
 
 create a folder "ImageMagick" in the same folder of the gcode-to-png.ps1 script and unzip it in the "ImageMagick" folder.
 
+(It uses the mogrify tool of ImageMagick)
+
 After that start the script with powershell, choose a gcode file and wait for the output.
 
 It is not really fast but it do his job. I hope it will help the DLP-3D-Printer community a little bit.
@@ -71,7 +73,7 @@ $var9.Picture_Scale = "100%"#Scales the Pixels up or down. Nearly the Same as Si
   
 If you have Fragments or something like this you should take a look on the Filter in "block" part of the script.
 
-It will dont filter correctly.
+It will than dont filter correctly.
 
 I hope you will find this tool helpfully. Have a lot of fun with it.
 
