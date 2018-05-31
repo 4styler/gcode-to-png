@@ -1,7 +1,7 @@
 $var9 = [hashtable]::Synchronized(@{})
 
 #Enter here your Settings
-$var9.LogicalProcessors = 8 #Threads of PC
+$var9.LogicalProcessors = 8 #Threads of PC, More than the threads (Cores) of the PC will not work correctly.
 $var9.NozzleSize = 0.6 #mm Nozzle size
 $var9.Bed_Size_X = 115 #mm Bed Size, should mach screen Size in the Slicer
 $var9.Bed_Size_Y = 60 #mm Bed Size, should mach screen Size in the Slicer
