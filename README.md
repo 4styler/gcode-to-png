@@ -2,7 +2,9 @@
 (License: grep(GNU GENERAL PUBLIC LICENSE))
 
 For execute Powershellscripts you need to set the Execution policy to unrestricted, start powershell and type:
+
 "Set-ExecutionPolicy unrestricted"
+
 and press return.
 
 Create a png file of each Layer of a GCode (optimized for CURA and Simplify3D GCode files). To display it, i will take
