@@ -76,6 +76,9 @@ $var9.Picture_Size = "1024x1024"
 $var9.Picture_Scale = "100%"#Scales the Pixels up or down. Nearly the Same as Size but only one Value
   - Same as above in Percent.
   
+$var9.mirror = $true # or $false
+  - mirrors the Picture.
+  
   
 If you have Fragments or something like this you should take a look on the Filter in "block" part of the script.
 
