@@ -13,6 +13,7 @@ $var9.Fill_Color = "black"
 $var9.BackgroudColor = "black"
 $var9.Picture_Size = "1024x1024" #Picture Size
 $var9.Picture_Scale = "100%"#Scales the Pixels up or down. Nearly the Same as Size but only one Value
+$var9.mirror = $true # or $false
 
     $block = {
         param($layer, $layer_num)
@@ -170,7 +171,11 @@ $var9.Picture_Scale = "100%"#Scales the Pixels up or down. Nearly the Same as Si
 
         $block2 = {
             param($pathtemp)
-            .\ImageMagick\mogrify.exe -size $var9.Picture_Size -path "$($(Split-Path $var9.OpenFileDialog.FileName).ToString())\PNG_Out\" -resize $var9.Picture_Scale -format png "$($var9.ScriptFolder.ToString())\Temp\$pathtemp\*.svg"
+            if ($var9.mirror){
+                .\ImageMagick\mogrify.exe -size $var9.Picture_Size -flip -path "$($(Split-Path $var9.OpenFileDialog.FileName).ToString())\PNG_Out\" -resize $var9.Picture_Scale -format png "$($var9.ScriptFolder.ToString())\Temp\$pathtemp\*.svg"
+            }else{
+                .\ImageMagick\mogrify.exe -size $var9.Picture_Size -path "$($(Split-Path $var9.OpenFileDialog.FileName).ToString())\PNG_Out\" -resize $var9.Picture_Scale -format png "$($var9.ScriptFolder.ToString())\Temp\$pathtemp\*.svg"
+            }
         }
 
         $Jobs2 = @()
