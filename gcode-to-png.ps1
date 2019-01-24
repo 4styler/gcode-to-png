@@ -44,7 +44,7 @@ $var9.mirror = $true # or $false
 
         $var18[$layer] = '<path d="'
         $var18[$layer] += $var15[$layer]
-        $var18[$layer] += 'z" transform="translate(' + $var9.Move_X + ' ' + $var9.Move_Y + ') scale(' + $var9.Scale_Object + ')"/>'
+        $var18[$layer] += '" transform="translate(' + $var9.Move_X + ' ' + $var9.Move_Y + ') scale(' + $var9.Scale_Object + ')"/>'
         $var19[$layer] = $share1.header + $var18[$layer] + '</svg>'
         [IO.File]::WriteAllText("$($var9.ScriptFolder.ToString())\Temp\$folder_num\$layer.svg", $($var19[$layer]).ToString())
     }
